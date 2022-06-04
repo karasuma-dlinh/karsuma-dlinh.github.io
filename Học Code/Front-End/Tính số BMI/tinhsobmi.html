@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính Chỉ Số BMI</title>
+    <script languge="javaspript" src="runBMI.js"></script>
+    <link href="tinhsobmi.css" rel="stylesheet">
+</head>
+<body>
+    <div class="khung">
+        <span id="chu">Họ Và Tên</span></br>
+        <input id="ho_va_ten" placeholder="_________Nhập_________" /></br>
+        <span id="chu">Cân Nặng (Đơn vị: kg)</span>
+        <span id="chu">Chiều Cao (Đơn vị: m)</span></br>
+        <input id="can_nang" placeholder="_________Nhập_________" />
+        <input id="chieu_cao" placeholder="_________Nhập_________" /></br>
+        <button type="button" id="btn-run" onclick="runBMI_input()">Tính BMI</br>Bằng Số Đã Nhập</button>
+        <button type="button" id="btn-run" onclick="runBMI()">Tính BMI</br>Bằng Hộp Thoại</button>
+    </div>
+    <div class="khung_ketqua">
+        <span id="chu_ketqua">Kết Quả</span></br>
+        <span name="Kết Quả" id="ketqua">
+            ___________________________</br>
+            ___________________________</br>
+            ___________________________</br>
+            ___________________________</br>
+        </span>
+    </div>
+</body>
+</html>

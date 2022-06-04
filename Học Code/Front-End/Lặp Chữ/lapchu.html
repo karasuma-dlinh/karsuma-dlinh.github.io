@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lặp Số</title>
+    <link href="lapchu.css" rel="stylesheet">
+    <script languge="javaspript" src="lapchu.js"></script>
+</head>
+<body>
+    <div class="tong_tao_lap">
+        <div class="tao_lap">
+            <p>Nhập Giới Hạn Lặp Số:</p>
+            <input name="Giới Hạn Lặp" class="input" id="nhap_so_cuoi"/></br>
+            <p>Chữ Bạn Muốn Lặp Sau Số:</p>
+            <input name="Chữ Sau Số" class="input" id="nhap_chu_sau_so"/></br>
+            <button type="button" class="button" id="bat_dau_lap" onclick="lap_so()">Bắt Đầu Lặp</button></br>
+            <input type="button" class="button" value="Load Lại Trang" onclick="f5()">
+            <input type="reset" class="button" value="Reset" onclick="rs()"> 
+            <div class="thuong_hieu">
+                
+            </div>
+        </div>
+        <div class="du_lieu_lap">
+            <p>Chữ Lặp Được Thiết Lập</p>
+            <span br id="du_lieu_lap_span"></span></br>
+        </div>
+    </div>
+</body>
+</html>

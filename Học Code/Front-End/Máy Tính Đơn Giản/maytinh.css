@@ -1,0 +1,103 @@
+input {
+    border-color: aqua;
+    background-color: rgb(180, 255, 230);
+    text-align: center;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type="text"]:focus{
+    background: -webkit-linear-gradient(to right, rgb(76, 0, 255), #00ff00);
+    background: linear-gradient(to right, rgb(76, 0, 255), #00ff00); 
+}
+
+.input {
+    padding: 15px 40px;
+}
+
+.nhap_so {
+    text-align: center;
+}
+
+h1.tieu_de {
+    color: yellow;
+    text-align: center ;
+}
+
+h1.chu_ket_qua, .so_ket_qua {
+    text-align: start;
+    margin-left: 70px;
+    color: palevioletred;
+    margin-top: 50px;
+}
+
+body {
+    background-image: url(romio_and_juliet.jpg);
+    display: flex;
+    margin: auto;
+
+}
+
+.nut_phep_tinh_cong_tru,.nut_phep_tinh_nhan_chia,.nut_reset {
+    border-style: hidden ;
+    margin-top: 10px;
+}
+
+.btn {
+    width: 100px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+.nut_phep_tinh_cong_tru,.nut_phep_tinh_nhan_chia {
+    margin-left: 130px;
+}
+
+.nut_phep_tinh_nhan_chia {
+    float: left;
+}
+
+.nut_reset {
+    float: left;
+    margin-left: 5px;
+    margin-top: -15px;
+}
+
+button {
+    border-radius: 30px;
+    border: 2px solid aqua ;
+    background-color: rgb(180, 255, 230);
+    padding: 10px 30px;
+    color: red;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 0.3s;
+    border: 2px solid red ;
+    background: rgb(76, 0, 255);
+    background: -webkit-linear-gradient(to right, rgb(76, 0, 255), #00ff00);
+    background: linear-gradient(to right, rgb(76, 0, 255), #00ff00); 
+}
+
+.may_tinh {
+    padding: 10px;
+    border-radius: 20px;
+    border-left: 5px solid #00ff00;
+    border-right: 5px solid #00ff00;
+    border-top: 5px solid #00ff00;
+    border-bottom: 5px solid red;
+    margin: auto;
+    height: 300px;
+    width: 600px;
+    background-image: url(da01079128fe7d6ccc366f3b691156a9.jpg);
+    background-size: 500px ;
+}
+
+

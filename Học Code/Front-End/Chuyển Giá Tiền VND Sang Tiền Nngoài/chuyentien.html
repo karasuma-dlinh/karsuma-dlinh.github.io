@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chuyển Giá Tiền</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="chuyentien.css" rel="stylesheet">
+    <script languge="javaspript" src="chuyentien.js"></script>
+</head>
+<body>
+    <h1>Chuyển Giá Tiền Từ VND Thành USD</h1>
+    <input id="sotien" type="text" placeholder="Số Tiền Muốn Chuyển"/>
+    <select id="loaitien">
+        <option >--Select--</option>
+        <option value="0">Đô la Mỹ - USD $</option>
+        <option value="1">Nhân Dân Tệ - CNY ¥</option>
+        <option value="2">EuRo - EUR €</option>
+        <option value="3">Yên Nhật - JPY ¥</option>
+    </select>
+    <button type="button" onclick="chuyen()">Chuyển</button><br/><br/>
+    <h1>
+        Số Tiền Được Chuyển Sang là:
+        <span id="loaitiensaukhidoi"></span>
+        <span id="daugachngang"></span>
+        <span id="giatridoi"></span>
+        <span id="kyhieutien"></span>
+    </h1>
+</body>
+</html>

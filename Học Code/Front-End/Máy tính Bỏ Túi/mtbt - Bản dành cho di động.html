@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Bỏ Túi</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .khung{
+            border: 20px solid black;
+            border-radius: 50px;
+            background-color: rgb(0, 255, 106);
+            height: 380px;
+            width: 230px;
+            margin: auto;
+            margin-top: 10px;
+            padding: 20px;
+        }
+        .man_hinh {
+            border: 5px solid red;
+            border-radius: 20px;
+            height: 20px;
+            width: 200px;
+            padding-left: 5px;
+            padding-bottom: 4px;
+            margin: auto;
+            font-size: 18px;
+        }
+        .button {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgb(255, 255, 0);
+            background-color: aqua;
+            border-radius: 55%;
+        }
+    </style>
+    <div class="khung" style="text-align: center;"> 
+        <table class="maytinh">
+            <tr>
+                <caption style="color: white;font-size: 23px;" align="top">MÁY TÍNH BỎ TÚI</caption>
+                <td colspan="4"><input class = "man_hinh" type = "text" id = "man_hinh" disabled/></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="(" onclick="manhinh('(')"></td>
+                <td><input class="button" type="button" value=")" onclick="manhinh(')')"></td>
+                <td><input class="button" type="button" value="%" onclick="manhinh('%')"></td>
+                <td><input class="button" type="button" value="+" onclick="manhinh('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="manhinh('1')"></td>
+                <td><input class="button" type="button" value="2" onclick="manhinh('2')"></td>
+                <td><input class="button" type="button" value="3" onclick="manhinh('3')"></td>
+                <td><input class="button" type="button" value="-" onclick="manhinh('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="manhinh('4')"></td>
+                <td><input class="button" type="button" value="5" onclick="manhinh('5')"></td>
+                <td><input class="button" type="button" value="6" onclick="manhinh('6')"></td>
+                <td><input class="button" type="button" value="x" onclick="manhinh('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="manhinh('7')"></td>
+                <td><input class="button" type="button" value="8" onclick="manhinh('8')"></td>
+                <td><input class="button" type="button" value="9" onclick="manhinh('9')"></td>
+                <td><input class="button" type="button" value="÷" onclick="manhinh('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="0" onclick="manhinh('0')"></td>
+                <td><input class="button" type="button" value="C" onclick="xoa_tat_ca()"></td>
+                <td><input class="button" type="button" value="⇐" onclick="xoa_tung_so()"></td>
+                <td><input class="button" type="button" value="=" onclick="tinh_ket_qua()"></td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        //Xóa tất cả
+        function xoa_tat_ca() {
+            document.getElementById("man_hinh").value = "";
+        }
+        // Xóa từng kí tự
+        function xoa_tung_so() {
+            var gia_tri = document.getElementById("man_hinh").value;
+            var gia_tri = gia_tri.toString();
+            if(gia_tri) { 
+                gia_tri = gia_tri.substr(0, gia_tri.length -1); 
+                document.getElementById("man_hinh").value = gia_tri;
+            }
+        }
+        // Lấy số hoặc dấu điền vào bảng
+        function manhinh(so_hoac_dau) {
+            var check = document.getElementById("man_hinh").value;
+            // Check trường hợp thừa chứ
+            if (check == "HÃY NHẬP PHÉP TÍNH" || check == "HÃY NHẬP PHÉP TÍN" || check == "HÃY NHẬP PHÉP TÍ" 
+                || check == "HÃY NHẬP PHÉP T" || check == "HÃY NHẬP PHÉP " || check == "HÃY NHẬP PHÉP") 
+            {
+                document.getElementById("man_hinh").value = "";
+                document.getElementById("man_hinh").value += so_hoac_dau;
+            } else {
+                document.getElementById("man_hinh").value += so_hoac_dau;
+            }   
+        }
+        // Tính kết quả bằng hàm eval()
+        function tinh_ket_qua() {
+            var ket_qua = document.getElementById("man_hinh").value;
+            // Check có giá trị hay ko
+            if (ket_qua == null || ket_qua == "") {
+                document.getElementById("man_hinh").value = "HÃY NHẬP PHÉP TÍNH";
+            }
+            else {
+                var ket_qua = eval(ket_qua);
+                document.getElementById("man_hinh").value = ket_qua;
+            }
+        }
+    </script>
+</body>
+</html>

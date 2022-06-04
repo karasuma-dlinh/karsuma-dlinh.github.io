@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy Tính Bỏ Túi</title>
+    <link rel="stylesheet" href="mtbt.css">
+    <script languge="javaspript" src="mtbt.js"></script>
+</head>
+<body>
+    <div class="khung" style="text-align: center;"> 
+        <table class="maytinh">
+            <tr>
+                <caption style="color: white;font-size: 23px;" align="top">MÁY TÍNH BỎ TÚI</caption>
+                <td colspan="4"><input class = "man_hinh" type = "text" id = "man_hinh" disabled/></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="(" onclick="manhinh('(')"></td>
+                <td><input class="button" type="button" value=")" onclick="manhinh(')')"></td>
+                <td><input class="button" type="button" value="%" onclick="manhinh('%')"></td>
+                <td><input class="button" type="button" value="+" onclick="manhinh('+')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="1" onclick="manhinh('1')"></td>
+                <td><input class="button" type="button" value="2" onclick="manhinh('2')"></td>
+                <td><input class="button" type="button" value="3" onclick="manhinh('3')"></td>
+                <td><input class="button" type="button" value="-" onclick="manhinh('-')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="4" onclick="manhinh('4')"></td>
+                <td><input class="button" type="button" value="5" onclick="manhinh('5')"></td>
+                <td><input class="button" type="button" value="6" onclick="manhinh('6')"></td>
+                <td><input class="button" type="button" value="x" onclick="manhinh('*')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="7" onclick="manhinh('7')"></td>
+                <td><input class="button" type="button" value="8" onclick="manhinh('8')"></td>
+                <td><input class="button" type="button" value="9" onclick="manhinh('9')"></td>
+                <td><input class="button" type="button" value="÷" onclick="manhinh('/')"></td>
+            </tr>
+            <tr>
+                <td><input class="button" type="button" value="0" onclick="manhinh('0')"></td>
+                <td><input class="button" type="button" value="C" onclick="xoa_tat_ca()"></td>
+                <td><input class="button" type="button" value="⇐" onclick="xoa_tung_so()"></td>
+                <td><input class="button" type="button" value="=" onclick="tinh_ket_qua()"></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+HTML: Sử Dụng Lệnh html:5 Để Tạo 1 Phần Nhập Code Nhanh Nhất
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Đặt Tên Cho Trang Web -->
+    <title>Tên Trang Web</title>
+    <!-- Thêm CSS từ bên ngoài -->
+    <link href="tên_tập_tin" rel="stylesheet">
+    <!-- Thêm Javaspript từ phần mềm ngoài -->
+    <script languge="javaspript" src="tên_tập_tin"></script>
+    <!-- Có Thể Thay Thế Bằng <script src="index.js" type='text/javascript'></script> -->
+</head>
+<body>
+    <!-- Tạo Event Để Kích Hoạt Bằng Button -->
+    <button name="tên_gì_cũng_đc" onclick="tên_event()"></button>
+    <!-- Tạo 1 Bảng Chọn Seclect -->
+    <select id="tên_id_hàm_seclect">
+        <option value="0">Lực Chọn 1</option>
+        <option value="1">Lực Chọn 2</option>
+        <option value="2">Lực Chọn 3</option>
+    </select>
+    <!-- Tạo 1 Giá Trị Nhập Vào -->
+    <span id="tên_id_hàm_span"></span>
+    <!-- Tạo Form với action="https://formspree.io/f/xyyodgvb" method="post" -->
+    <form action="https://formspree.io/f/xyyodgvb" method="post">
+
+    </form>
+Javaspript: Trước Tiên Phải Khai Báo Phần Nhập Javaspript Hoặc Tạo File Ngoài
+    <script> Có Thể Dùng '' Hoặc ""
+        Các Phép Tính:                      Các Loại Dấu Sô Sán
+            + = Cộng                            == = So Sánh Bằng
+            - = Trừ                             != = So Sánh Khác
+            * = Nhân                            <= = Bé Hơn Hoặc Bằng
+            / = Chia                            >= = Lớn Hơn Hoặc Bằng
+            ** = Lũy Thừa
+            % = Chia Lấy Dư
+            ++ = Công Thêm 1
+            -- = Trừ đi 1
+        //Tạo 1 Biến Ko Bao Giờ Thay Đổi
+        const x = "giá_trị_ko_đổi"
+        //Tạo 1 Biến Có Thể Thay Đổi - Thường Dùng Để Tính Toán,Lấy Dữ Liệu,v.v
+        var x = a+b hoặc a-b hoặc v.v
+        //Khi Event Cụ Thể Được Kích Hoạt, Thì Code Trong Event Đó Được Chạy
+        function Event {
+            //Thực Hiện Khi Event Được Kích Hoạt
+        }
+        //Lấy Dữ Liệu Từ 1 ID
+        var a = document.getElementById("id_muốn_lấy_dữ liệu").value
+        //Chuyển 1 Kiểu Dữ Liệu Sang Dạng Dữ Liệu Số
+        dữ_liệu_dạng_số = parseFloat(dữ_liệu)
+        //Nhập Dữ Liệu Vào 1 ID
+        document.querySelector("id_muốn_nhập_dữ_liệu")
+        //Reset biểu mẫu - Đầu tiên tạo hàm form trong html
+        const form = document.querySelector('form')
+        form.reset()
+    </script>
+</body>
+</html>

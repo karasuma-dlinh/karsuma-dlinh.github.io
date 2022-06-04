@@ -1,0 +1,66 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://i.pinimg.com/originals/81/a6/7f/81a67f68a0c2b54afd22f2279b921c7a.png);
+    background-size: 1322px;
+}
+
+.khung {
+    height: 150px;
+    width: 600px;
+    text-align: center;
+    border: 5px solid greenyellow;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgb(94, 94, 94);
+}
+
+.khung_ketqua {
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    border: 5px solid greenyellow;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: aqua;
+}
+
+input {
+    border: 5px solid red;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    color: rgb(0, 255, 0);
+    text-align: center;
+    background: -webkit-linear-gradient(to right, rgb(76, 0, 255), #ff00ff);
+    background: linear-gradient(to right, rgb(76, 0, 255), #ff00ff); 
+}
+
+button {
+    border: 3px solid red;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 255, 0);
+    background: -webkit-linear-gradient(to right, rgb(76, 0, 255), #ff00ff);
+    background: linear-gradient(to right, rgb(76, 0, 255), #ff00ff); 
+}
+
+#chu {
+    color: rgb(0, 255, 0);
+    font-weight: bold;
+}
+
+#chu_ketqua {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}

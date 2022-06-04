@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tính Toán</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thêm CSS từ bên ngoài -->
+    <link href="maytinh.css" rel="stylesheet">
+    <!-- Thêm Javaspript từ phần mềm ngoài -->
+    <script languge="javaspript" src="maytinh.js"></script>
+    <!-- Có Thể Thay Thế Bằng <script src="index.js" type='text/javascript'></script> -->
+</head>
+<body>
+    <div class="may_tinh">
+        <form>
+            <h1 class="tieu_de">Máy Tính Đơn Giản</h1>
+            <!-- Tạo Thẻ Input Nhập Giá Trị -->
+            <div class="nhap_so">
+                <input class="input" id="sothu1" type="text" placeholder="Nhập số thứ 1"/>
+                <input class="input" id="sothu2" type="text" placeholder="Nhập số thứ 2"/><br/>
+            </div>
+            <!-- Tạo nút chọn phép tính toán -->
+            <div class="nut_phep_tinh_cong_tru">
+                <button class="btn" id="cong" type="button" onclick="tinh_tong()">Cộng</button>
+                <button class="btn" id="tru" type="button" onclick="tinh_hieu()">Trừ</button>
+            </div>
+            <div class="nut_phep_tinh_nhan_chia">
+                <button class="btn" id="nhan" type="button" onclick="tinh_tich()">Nhân</button>
+                <button class="btn" id="chia" type="button" onclick="tinh_thuong()">Chia</button>
+            </div>
+            <div class="nut_reset">
+                <button class="btn" type="reset">Reset</button>
+            </div>
+            <!-- Tạo phiên hiện kết quả theo từng phép tính -->
+            <div class="ket_qua">
+                </br>
+                <h1 class="chu_ket_qua">Kết quả:
+                    <span id="a"></span>
+                    <span id="dau"></span>
+                    <span id="b"></span>
+                    <span id="daubang"></span>
+                    <span id="kq"></span>
+                </h1>
+            </div>
+        </form>
+    </div>
+</body>

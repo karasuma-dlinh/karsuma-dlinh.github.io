@@ -1,0 +1,9 @@
+/* Chỉnh All */
+* {  }
+/* Ko ghi gì là cho tất cả các thuộc tính đề cập */
+... {  }
+/* Làm hiệu ứng hover */
+button:hover {
+    transition: 0.3s;
+    background: -webkit-linear-gradient(to right, rgb(76, 0, 255), #00ff00);
+    background: linear-gradient(to right, rgb(76, 0, 255), #00ff00); 
